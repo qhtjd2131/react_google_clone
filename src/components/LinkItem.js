@@ -8,7 +8,7 @@ function LinkItem({ name, URL }) {
     <div className="link-item">
       <a href={URL}>
         <div className="favicon-container">
-          <img className="link-favicon-img" src={favicon} alt="favicon" />
+          <img className="link-favicon-img" src={favicon} alt="" />
         </div>
       </a>
       <div className="link-name">

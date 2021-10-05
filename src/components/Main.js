@@ -9,7 +9,6 @@ import Dialog from "./Dialog";
 
 function Main() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-
   const [favorite, setFavorite] = useState([
     {
       name: "NAVER",
@@ -24,6 +23,16 @@ function Main() {
       URL: "https://www.nate.com",
     },
   ]);
+
+  const addFavorite = (name, URL) => {
+    const fav = {
+      name: name,
+      URL: URL,
+    };
+
+    console.log("fav :", fav);
+    setFavorite([...favorite, fav]);
+  };
 
   const setIsDialogOpenTrue = () => {
     setIsDialogOpen(true);
@@ -42,13 +51,19 @@ function Main() {
         <img className="mic-image" src={mic} alt="mic" />
       </div>
       <div className="link-container">
+        {console.log(favorite)}
         {favorite.map((website) => (
           <LinkItem key={website.URL} name={website.name} URL={website.URL} />
         ))}
-        {favorite.length < 10 && <CreateItem setIsDialogOpenTrue={setIsDialogOpenTrue}
-        />}
+        {favorite.length < 10 && (
+          <CreateItem setIsDialogOpenTrue={setIsDialogOpenTrue} />
+        )}
       </div>
-      <Dialog isDialogOpen={isDialogOpen} setIsDialogOpenFalse={setIsDialogOpenFalse} />
+      <Dialog
+        isDialogOpen={isDialogOpen}
+        setIsDialogOpenFalse={setIsDialogOpenFalse}
+        addFavorite={addFavorite}
+      />
     </div>
   );
 }
