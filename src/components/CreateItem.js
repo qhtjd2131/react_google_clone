@@ -4,7 +4,6 @@ import "./CreateItem.css";
 
 function CreateItem({setIsDialogOpenTrue}) {
 
-  
   const clickHandler = () => {
     setIsDialogOpenTrue();
   };

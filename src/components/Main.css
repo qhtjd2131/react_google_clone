@@ -9,7 +9,7 @@
   margin-bottom: 38px;
 }
 
-.main-container input[type="text"] {
+.main-container .main-input {
   height: var(--input-box-height);
   width: 100%;
   font-size: 16px;

@@ -37,7 +37,7 @@ function Main() {
     <div className="main-container">
       <img className="logo" src={google_logo} alt="logo"></img>
       <div className="input-container">
-        <input type="text" />
+        <input className="main-input" type="text" />
         <img className="search-image" src={search} alt="search" />
         <img className="mic-image" src={mic} alt="mic" />
       </div>

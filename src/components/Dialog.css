@@ -1,12 +1,20 @@
 .dialog {
+  width: 512px;
+  height: 267px;
   border: 0;
-  border-radius: 8px;
+  border-radius: 14px;
   bottom: 50%;
   box-shadow: 0 0 16px rgb(0 0 0 / 12%), 0 16px 16px rgb(0 0 0 / 24%);
   top: 50%;
   /* position: absolute; */
   /* box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 9999px; */
-  /* z-index: 100; */
+}
+.dialog .dialog-contents-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .dialog ::backdrop {
@@ -17,4 +25,45 @@
 .dialog .dialog-URL-input {
   background-color: rgb(241, 243, 244);
   /* background-color: transparent; */
+  height: 35px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 10px 8px;
+}
+
+.dialog .dialog-name,
+.dialog .dialog-URL {
+  font-size: 12px;
+  margin-bottom: -10px;
+}
+
+.dialog .dialog-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cancle-button,
+.submit-button {
+  /* position: absolute; */
+  padding: 10px 20px;
+  border: 1px solid rgb(218, 220, 224);
+  background-color: inherit;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: rgb(26, 115, 232);
+  cursor: pointer;
+  margin-right: 10px;
+}
+.cancle-button:active,
+.submit-button:active {
+  background-color: rgb(149, 188, 238);
+  box-shadow: 0 0 16px rgb(0 0 0 / 12%), 0 16px 16px rgb(0 0 0 / 24%);
+  transition: 0.2s;
+}
+
+.cancle-button:hover,
+.submit-button:hover {
+  background-color: rgb(235, 238, 243);
 }
