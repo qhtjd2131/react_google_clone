@@ -1,0 +1,63 @@
+.link-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.link-container :hover {
+  background-color: rgba(241, 243, 244, 1);
+}
+
+.link-container :hover .favicon-container {
+  background-color: #ffffff;
+}
+.favicon-container :hover {
+  background-color: #ffffff;
+}
+
+.link-item {
+  width: 112px;
+  height: 112px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.favicon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(241, 243, 244, 1);
+  border-radius: 50%;
+}
+
+.link-item .link-favicon-img {
+  width: 24px;
+  height: 24px;
+}
+
+.link-item .link-name {
+  margin: 6px 0px 0px;
+  padding: 2px 8px;
+  width: 88px;
+  height: 32px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+.link-name span {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+}

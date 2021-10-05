@@ -1,0 +1,20 @@
+.dialog {
+  border: 0;
+  border-radius: 8px;
+  bottom: 50%;
+  box-shadow: 0 0 16px rgb(0 0 0 / 12%), 0 16px 16px rgb(0 0 0 / 24%);
+  top: 50%;
+  /* position: absolute; */
+  /* box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 9999px; */
+  /* z-index: 100; */
+}
+
+.dialog ::backdrop {
+  background: rgba(255, 0, 0, 0.25);
+}
+
+.dialog .dialog-name-input,
+.dialog .dialog-URL-input {
+  background-color: rgb(241, 243, 244);
+  /* background-color: transparent; */
+}

@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+소개
+구글 메인페이지(검색페이지) 클론 코딩
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+시작하기
+"npm run start"
 
-## Available Scripts
+기술스택 ( '-' : 사용된 스택, '*' : 이번에 처음으로 사용해본 스택)
 
-In the project directory, you can run:
+1. React (create-react-app)
 
-### `yarn start`
+- webpack (bundler)
+- babel
+- CSS-module (css_loader)
+  - CSS3
+  * media query 사용 (@media)
+  * global css 변수 사용 (:root)
+- HTML5
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+겪었던 어려움
+문제 1.
+내용 : 웹페이지 viewport의 크기에 따른 조건부 스타일변경이 필요했다.
+해결 : media query를 사용하여 max-width 조건을 지정하여 viewport의 크기변경에 따라 컴포넌트의 크기를 줄 일 수 있었다.
+기타 : 
+@media(width : 500px) {...} : width가 500px일 때
+@media(max-width : 500px) {...} : width가 500px 미만일 때
+@media(min-width : 500px) {...} : width가 500px 초과일 때
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+media query를 사용했을 때, 특정 조건이 만족되면 media query 내에서 정의해준 스타일로 모두 변경되는것이 아니고 겹치는 속성만 변경해주고 나머지는 추가되었다. 즉, 완전한 IF문의 개념이 아니다. 예를 들어 아래와 같은 스타일이 정의되었을 경우를 보자.
 
-### `yarn test`
+.class_A{
+    font-size : 10px;
+}
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+@media (max-width : 200px) {
+    .class_A{
+        color : blue;
+    }
+}
 
-### `yarn build`
+class_A 라는 스타일클래스는 width가 200px 아래로 내려간다면, font-size는 10px로 유지되고, color : blue 속성이 추가된다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
