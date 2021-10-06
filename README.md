@@ -20,7 +20,7 @@
 - global css 변수 사용 (:root) (이번 프로젝트에서 처음 사용)
 
 **3. CRA (create-react-app)**
-(auto installed by CRA)
+(automatically installed by CRA)
 
 - webpack (bundler)
 - babel
