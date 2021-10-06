@@ -51,7 +51,6 @@ function Main() {
         <img className="mic-image" src={mic} alt="mic" />
       </div>
       <div className="link-container">
-        {console.log(favorite)}
         {favorite.map((website) => (
           <LinkItem key={website.URL} name={website.name} URL={website.URL} />
         ))}
