@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/reacct_google_clone/static/css/main.d5c41d2f.chunk.css",
-    "main.js": "/reacct_google_clone/static/js/main.8d9ef806.chunk.js",
-    "main.js.map": "/reacct_google_clone/static/js/main.8d9ef806.chunk.js.map",
-    "runtime-main.js": "/reacct_google_clone/static/js/runtime-main.46f913b0.js",
-    "runtime-main.js.map": "/reacct_google_clone/static/js/runtime-main.46f913b0.js.map",
-    "static/js/2.158cd41e.chunk.js": "/reacct_google_clone/static/js/2.158cd41e.chunk.js",
-    "static/js/2.158cd41e.chunk.js.map": "/reacct_google_clone/static/js/2.158cd41e.chunk.js.map",
-    "index.html": "/reacct_google_clone/index.html",
-    "static/css/main.d5c41d2f.chunk.css.map": "/reacct_google_clone/static/css/main.d5c41d2f.chunk.css.map",
-    "static/js/2.158cd41e.chunk.js.LICENSE.txt": "/reacct_google_clone/static/js/2.158cd41e.chunk.js.LICENSE.txt",
-    "static/media/google_logo.68c1ab5b.svg": "/reacct_google_clone/static/media/google_logo.68c1ab5b.svg",
-    "static/media/menu_9dots.1d73470a.png": "/reacct_google_clone/static/media/menu_9dots.1d73470a.png",
-    "static/media/mic.eb908866.png": "/reacct_google_clone/static/media/mic.eb908866.png"
+    "main.css": "/react_google_clone/static/css/main.d5c41d2f.chunk.css",
+    "main.js": "/react_google_clone/static/js/main.8d9ef806.chunk.js",
+    "main.js.map": "/react_google_clone/static/js/main.8d9ef806.chunk.js.map",
+    "runtime-main.js": "/react_google_clone/static/js/runtime-main.8258950c.js",
+    "runtime-main.js.map": "/react_google_clone/static/js/runtime-main.8258950c.js.map",
+    "static/js/2.158cd41e.chunk.js": "/react_google_clone/static/js/2.158cd41e.chunk.js",
+    "static/js/2.158cd41e.chunk.js.map": "/react_google_clone/static/js/2.158cd41e.chunk.js.map",
+    "index.html": "/react_google_clone/index.html",
+    "static/css/main.d5c41d2f.chunk.css.map": "/react_google_clone/static/css/main.d5c41d2f.chunk.css.map",
+    "static/js/2.158cd41e.chunk.js.LICENSE.txt": "/react_google_clone/static/js/2.158cd41e.chunk.js.LICENSE.txt",
+    "static/media/google_logo.68c1ab5b.svg": "/react_google_clone/static/media/google_logo.68c1ab5b.svg",
+    "static/media/menu_9dots.1d73470a.png": "/react_google_clone/static/media/menu_9dots.1d73470a.png",
+    "static/media/mic.eb908866.png": "/react_google_clone/static/media/mic.eb908866.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.46f913b0.js",
+    "static/js/runtime-main.8258950c.js",
     "static/js/2.158cd41e.chunk.js",
     "static/css/main.d5c41d2f.chunk.css",
     "static/js/main.8d9ef806.chunk.js"
