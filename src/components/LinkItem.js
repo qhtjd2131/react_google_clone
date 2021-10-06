@@ -4,6 +4,8 @@ import "./LinkItem.css";
 function LinkItem({ name, URL }) {
   const favicon = URL + "/favicon.ico";
 
+  //favicon 이 없을 시에는 ??
+
   return (
     <div className="link-item">
       <a href={URL}>
