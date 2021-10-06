@@ -26,7 +26,26 @@
 - babel
 - others..
 
+**4. React Library**
+- gh-pages 
+
 ---
+
+### Dependencies
+
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "gh-pages": "^3.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
+  }
+
+---
+
 
 ### 겪었던 어려움
 
@@ -67,7 +86,8 @@ class_A 라는 스타일클래스는 width가 200px 아래로 내려간다면, f
 
 ---
 
-### 향후 계획
+## 향후 계획
+
 1. 스타일링을 위한 다양한 방법 사용 (SCSS, SASS, Styled Components) 을 사용하여 클론코딩을 할것이다.
 
 2. 라이브러리 없이 컴포넌트를 만드는데 익숙해지면, 다양한 라이브러리 (material-UI 등) 사용하여 효율적인 스타일링을 할것이다.
