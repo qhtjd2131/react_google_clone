@@ -16,7 +16,7 @@ function Header() {
         setIsOpenMenu(false);
       }
     },
-    [isOpenMenu]
+    [isOpenMenu, dialog_element]
   );
 
   useEffect(() => {
