@@ -7,25 +7,12 @@ function Header() {
   const dialog_element = React.createRef();
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const menuButtonClickHandler = () => {
-    console.log("button click : setIsOpenMenu true!");
     setIsOpenMenu(true);
   };
 
   const handleDialogBackgroundClick = useCallback(
     (e) => {
-      console.log("handleDialogBackgroundClick!!----------");
-      console.log(dialog_element);
-      console.log("in hadlebackgroundclick :", isOpenMenu);
-      console.log("dialog_current:", dialog_element.current);
-      console.log(
-        "dialog.current.contains(e.target):",
-        dialog_element.current.contains(e.target)
-      );
-      console.log("-------------------------");
-      if (
-        isOpenMenu &&
-        (!dialog_element.current || !dialog_element.current.contains(e.target))
-      ) {
+      if (isOpenMenu && !dialog_element.current.contains(e.target)) {
         setIsOpenMenu(false);
         console.log("setIsOpenMenu : false ");
       }
