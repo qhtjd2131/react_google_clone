@@ -1,13 +1,33 @@
+.dialog-menu-container {
+  width: auto;
+  height: auto;
+  padding: 5px;
+}
+
 .dialog-menu {
   position: absolute;
   top: 70px;
   left: auto;
-  width: 300px;
-  height: 700px;
+  width: auto;
+  height: 550px;
   z-index: 900;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 14px;
+  box-shadow: 0 0 16px rgb(0 0 0 / 12%), 0 16px 16px rgb(0 0 0 / 24%);
   overflow: auto;
+  padding: 10px 0px 10px 20px;
+  margin-right: 10px;
+}
+
+.dialog-menu::-webkit-scrollbar {
+  width: 30px;
+}
+
+.dialog-menu::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: rgb(221, 221, 221);
+  background-clip: padding-box;
+  border: 8px solid transparent;
 }
 
 .menu-content-wrapper {
@@ -22,9 +42,25 @@
   grid-auto-rows: 1fr;
   margin: 0;
   padding: 0;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  box-sizing: content-box;
 }
 
 .dialog-menu-items a {
-  /* margin: 0; */
+  width: 100px;
+  height: 100px;
   padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.dialog-menu-items a:hover {
+  background-color: rgb(230, 230, 255);
 }

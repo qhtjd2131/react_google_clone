@@ -1,7 +1,7 @@
 import React from "react";
 import "./DialogMenu.css";
 
-function DialogMenu({ isOpenMenu, menuClose }) {
+function DialogMenu({ isOpenMenu }) {
   const DialogMenuItem = () => {
     const items = [
       "A",
@@ -20,6 +20,22 @@ function DialogMenu({ isOpenMenu, menuClose }) {
       "N",
       "O",
       "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "V",
+      "W",
+      "X",
+      "Y",
+      "Z",
+      "B.",
+      "O.",
+      "S.",
+      "U.",
+      "N.",
+      "G.",
     ];
 
     return (
@@ -35,11 +51,9 @@ function DialogMenu({ isOpenMenu, menuClose }) {
 
   return (
     <dialog className="dialog-menu" open={isOpenMenu}>
-      {console.log("im DialogMenu Component! and isOpenMenu :", isOpenMenu)}
       <div className="menu-content-wrapper">
         <DialogMenuItem />
       </div>
-      <button onClick={menuClose}>x</button>
     </dialog>
   );
 }
