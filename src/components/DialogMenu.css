@@ -1,0 +1,30 @@
+.dialog-menu {
+  position: absolute;
+  top: 70px;
+  left: auto;
+  width: 300px;
+  height: 700px;
+  z-index: 900;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.menu-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-menu-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.dialog-menu-items a {
+  /* margin: 0; */
+  padding: 20px;
+}
