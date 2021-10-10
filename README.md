@@ -6,7 +6,10 @@
 
 ### 시작하기
 
-    "npm run start"
+```
+npm install
+npm run start
+```
 
 ---
 
@@ -34,7 +37,7 @@
 
 ### Dependencies
 "dependencies": {
-	
+
 "@testing-library/jest-dom": "^5.11.4",
 
 "@testing-library/react": "^11.1.0",
@@ -50,6 +53,7 @@
 "react-scripts": "4.0.3",
 
 "web-vitals": "^1.0.1"
+
 }
 
 ---
